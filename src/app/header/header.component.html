@@ -1,0 +1,21 @@
+<div class="header">
+    <div style="display: inline-flex;">
+        <ng-content></ng-content>
+    </div>
+    <div class="middle">
+        <p class="current-page">{{pageTitle$ | async}}</p>
+    </div>
+    <div class="right-section">
+        <mat-icon class="search-icon">search</mat-icon>
+        <mat-form-field appearance="outline" class="project-select">
+            <mat-label>Choose Project</mat-label>
+            <mat-select class="select-project">
+                <mat-option *ngFor="let food of foods" [value]="food.value">
+                    {{food.viewValue}}
+                </mat-option>
+            </mat-select>
+        </mat-form-field>
+        <mat-icon class="notifications">notifications</mat-icon>
+        <mat-icon class="user">account_circle</mat-icon>
+    </div>
+</div>

@@ -1,0 +1,88 @@
+<div class="container">
+    <app-header>
+        <div class="header-items">
+            <mat-icon (click)="sidenav.toggle()" class="siden av-menu">menu</mat-icon>
+            <span class="logo">Infosys NIA</span>
+        </div>
+
+        <div class="pages-btns btns">
+            <a mat-raised-button [routerLink]="['/page-one']">Data Table & Filters</a>
+            <a mat-raised-button [routerLink]="['/page-two']">Details Layout</a>
+        </div>
+    </app-header>
+    <mat-sidenav-container fullscreen class="side-nav">
+        <mat-sidenav #sidenav mode="side" class="menu-sidenav" [ngStyle]="{ 'width.px': sidenavWidth }" opened="true">
+            <mat-nav-list class="nav-items-list">
+                <mat-list-item>
+                    <mat-icon mat-list-icon>send</mat-icon>
+                    <div fxFlex="10"></div>
+                    <div *ngIf="sidenavWidth > 48" class="sidenav-item">
+                        <h5 class="nav-items">Test</h5>
+                    </div>
+                </mat-list-item>
+
+                <mat-list-item>
+                    <mat-icon mat-list-icon>delete</mat-icon>
+                    <div fxFlex="10"></div>
+                    <div *ngIf="sidenavWidth > 48" class="sidenav-item">
+                        <h5 class="nav-items">Delete</h5>
+                    </div>
+                </mat-list-item>
+
+                <mat-list-item>
+                    <mat-icon mat-list-icon>info</mat-icon>
+                    <div fxFlex="10"></div>
+                    <div *ngIf="sidenavWidth > 48" class="sidenav-item">
+                        <h5 class="nav-items">Information</h5>
+                    </div>
+                </mat-list-item>
+
+
+                <mat-list-item>
+                    <mat-icon mat-list-icon>chat_bubble</mat-icon>
+                    <div fxFlex="10" *ngIf="sidenavWidth > 48">
+                        <h5 class="nav-items">Chat</h5>
+                    </div>
+                </mat-list-item>
+
+                <mat-list-item>
+                    <mat-icon mat-list-icon>flag</mat-icon>
+                    <div fxFlex="10" *ngIf="sidenavWidth > 48">
+                        <h5 class="nav-items">Raise issue</h5>
+                    </div>
+                </mat-list-item>
+
+                <mat-list-item>
+                    <mat-icon mat-list-icon>shopping_cart</mat-icon>
+                    <div fxFlex="10" *ngIf="sidenavWidth > 48">
+                        <h5 class="nav-items">Add to Cart</h5>
+                    </div>
+                </mat-list-item>
+
+                <mat-list-item>
+                    <mat-icon mat-list-icon>people</mat-icon>
+                    <div fxFlex="10" *ngIf="sidenavWidth > 48">
+                        <h5 class="nav-items">Users</h5>
+                    </div>
+                </mat-list-item>
+
+                <hr style="background-color: #ccc;">
+                <mat-list-item *ngIf="sidenavWidth <= 48">
+                    <mat-icon class="right" (click)="increase()">keyboard_arrow_right</mat-icon>
+                    <div fxFlex="10"></div>
+                </mat-list-item>
+                <mat-list-item *ngIf="sidenavWidth > 48">
+                    <mat-icon class="right" (click)="decrease()">keyboard_arrow_left</mat-icon>
+                    <div fxFlex="10"></div>
+                </mat-list-item>
+            </mat-nav-list>
+
+        </mat-sidenav>
+
+        <div>
+            <router-outlet></router-outlet>
+        </div>
+
+
+    </mat-sidenav-container>
+</div>

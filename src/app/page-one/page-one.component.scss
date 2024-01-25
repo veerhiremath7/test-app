@@ -1,0 +1,190 @@
+.mat-mdc-raised-button .mdc-button__label {
+  text-transform: uppercase;
+  font-family: "Roboto-Medium";
+  font-weight: 600;
+}
+
+::ng-deep .download-btn.mat-mdc-raised-button .mdc-button__label {
+  color: #217df3ff !important;
+}
+
+.section-two {
+  display: flex;
+  flex-direction: row;
+}
+
+.filter-title {
+  font-size: 14px;
+  padding: 15px;
+  border: 1px solid #ccc;
+  margin: 0;
+  border-radius: 3px 3px 0px 0px;
+}
+
+.clear-button {
+  font-size: 14px;
+  font-family: Roboto-Medium;
+  color: #217df3;
+  height: 24px;
+}
+
+.filter {
+  max-width: 30%;
+  margin: 15px 24px;
+}
+
+.table-container {
+  margin-top: 15px;
+}
+::ng-deep.right-section .mat-mdc-form-field {
+  max-width: 200px;
+  margin: 0 20px;
+}
+.table-container {
+  width: 70%;
+  flex-grow: 1;
+}
+
+::ng-deep .mat-expansion-panel-spacing {
+  margin: 0 !important;
+}
+
+::ng-deep.custom-tab .mat-mdc-tab-header {
+  background: #fff;
+}
+
+::ng-deep.custom-tab .mdc-tab--active.mdc-tab-indicator--active {
+  background: #217df3ff;
+}
+
+.mat-mdc-chip.mat-mdc-standard-chip {
+  --mdc-chip-container-height: 20px;
+  background: transparent;
+  border: 1px solid;
+  margin: 2px 8px 10px;
+}
+
+.mat-mdc-standard-chip.mdc-evolution-chip--with-trailing-action
+  .mdc-evolution-chip__action--trailing {
+  padding-left: 8px;
+  padding-right: 1px;
+}
+
+::ng-deep
+  .mat-mdc-chip.mdc-evolution-chip--with-trailing-action
+  .mat-mdc-chip-action-label {
+  font-size: 12px !important;
+  font-family: Roboto-Medium;
+}
+
+::ng-deep span.mdc-evolution-chip__text-label.mat-mdc-chip-action-label {
+  font-size: 12px;
+}
+
+.mat-expansion-panel:not([class*="mat-elevation-z"]) {
+  border-radius: 0 !important;
+}
+
+::ng-deep.custom-tab
+  .mdc-tab--active.mdc-tab-indicator--active.mat-mdc-tab
+  .mdc-tab__text-label {
+  color: #fff;
+}
+::ng-deep .mat-mdc-tab.mdc-tab--active:hover .mdc-tab__text-label {
+  color: #fff;
+}
+
+::ng-deep.custom-tab span.mdc-tab__text-label {
+  font-weight: 600;
+  font-family: "Roboto-Bold";
+}
+
+::ng-deep.custom-tab
+  .mdc-tab--active.mdc-tab-indicator--active:hover
+  .mdc-tab__text-label {
+  color: #fff;
+}
+
+::ng-deep.custom-tab
+  .mdc-tab--active.mdc-tab-indicator--active.mat-mdc-tab
+  span.mdc-tab-indicator
+  span.mdc-tab-indicator__content.mdc-tab-indicator__content--underline {
+  border-color: #217df3;
+}
+
+::ng-deep.custom-tab
+  .mdc-tab--active.mdc-tab-indicator--active.mat-mdc-tab:hover
+  span.mdc-tab__content
+  span.mdc-tab__text-label,
+::ng-deep.custom-tab
+  .mdc-tab--active.mdc-tab-indicator--active.mat-mdc-tab:focus
+  span.mdc-tab__content
+  span.mdc-tab__text-label {
+  color: #fff;
+}
+
+.mat-mdc-header-cell {
+  font-size: 12px;
+  font-weight: 600;
+  color: #929191;
+  font-family: "Roboto-Medium";
+}
+
+.mat-expansion-panel-header-title,
+.mat-expansion-panel-header-description {
+  font-family: "Roboto-Medium";
+  color: #0000008a;
+}
+
+::ng-deep
+  .mat-mdc-tab-group.mat-mdc-tab-group-stretch-tabs
+  > .mat-mdc-tab-header
+  .mat-mdc-tab {
+  border-bottom: 2px solid #ccc;
+}
+
+::ng-deep .expansion-item .mdc-list-item .mdc-list-item__primary-text {
+  color: #000000bf;
+  font-family: "Roboto-Regular";
+  letter-spacing: 0;
+}
+
+.filter-items.mdc-list {
+  padding: 0;
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+.selected-filter {
+  padding: 0 5px;
+}
+
+.filter .mat-expansion-panel-header.mat-expanded,
+.filter-items.mdc-list .mat-mdc-list-item,
+.mat-mdc-list-option {
+  height: 35px !important;
+}
+
+::ng-deep .page-one-list .mat-expansion-panel-header,
+::ng-deep .page-one-list .mdc-list-item.mdc-list-item--with-one-line {
+  max-height: 35px !important;
+  cursor: pointer;
+}
+
+::ng-deep .mat-expansion-panel-body {
+  padding: 0 8px 0 !important;
+}
+
+::ng-deep.custom-tab .mat-mdc-tab-body-wrapper {
+  box-shadow: 0 1px 2px 0;
+  margin-top: 4px;
+}
+
+::ng-deep.custom-tab .mat-mdc-tab-header {
+  box-shadow: 0 2px 4px 0;
+}
+
+::ng-deep tr.mat-mdc-row:hover {
+  background: #f5f5f5;
+  box-shadow: 0 1px 4px 0 #00000033;
+}

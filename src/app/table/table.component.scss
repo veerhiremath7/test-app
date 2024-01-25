@@ -1,0 +1,18 @@
+.status-text {
+  padding: 4px 10px;
+  border: 1px solid #2dd6b7;
+  border-radius: 25px;
+  background: #2dd6b759;
+  font-family: "Roboto-Bold";
+  color: #000000bf;
+}
+
+th.mat-mdc-header-cell.mdc-data-table__header-cell.cdk-header-cell {
+  font-family: Roboto-Medium;
+  font-size: 12px;
+  color: #000000bf;
+}
+
+.demo-row-is-clicked {
+  font-weight: bold;
+}

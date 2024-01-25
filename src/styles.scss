@@ -1,0 +1,81 @@
+/* You can add global styles to this file, and also import other style files */
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+
+body {
+  margin: 0;
+  font-family: "Roboto-Regular";
+}
+
+@font-face {
+  font-family: "Roboto-Bold";
+  src: url("../src/assets/Roboto-Bold.ttf");
+}
+
+@font-face {
+  font-family: "Roboto-Medium";
+  src: url("../src/assets/Roboto-Medium.ttf");
+}
+
+@font-face {
+  font-family: "Roboto-Regular";
+  src: url("../src/assets/Roboto-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Roboto-Light";
+  src: url("../src/assets/Roboto-Light.ttf");
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 4px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.page-title {
+  display: flex;
+  flex-direction: row;
+  padding: 10px 0;
+  box-shadow: 0 1px 3px 0;
+  background: #fff;
+}
+
+.title-text,
+.filter-title {
+  margin: 7px;
+  font-size: 18px;
+  color: #000000de;
+  text-align: left;
+  font-weight: 600;
+  font-family: "Roboto-Medium";
+}
+
+.create-btn,
+.download-btn,
+.btn-new-project {
+  margin: 0 5px;
+  font-family: Roboto-Bold;
+}
+
+.btns {
+  margin-left: auto;
+}
+
+.btns button,
+.btns a {
+  border-radius: 0;
+}

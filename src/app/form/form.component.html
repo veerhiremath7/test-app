@@ -1,0 +1,37 @@
+<div class="form-container">
+    <div class="block-1">
+        <p>Basic Information</p>
+        <div class="field-container">
+            <mat-card class="card-container">
+                <mat-form-field class="half-width">
+                    <mat-label>Model Name</mat-label>
+                    <input matInput placeholder="Model Name" value="Sample Model Name">
+                </mat-form-field>
+                <mat-form-field class="half-width">
+                    <mat-label>Model Description</mat-label>
+                    <input matInput placeholder="Model Description"
+                        value="Point of Sale data from Reliance Fresh, Hyderabad">
+                </mat-form-field>
+            </mat-card>
+        </div>
+        <p>Parameters</p>
+        <div class="field-container">
+
+            <mat-card class="card-parameters">
+                <div class="checkboxes">
+                    <mat-checkbox color="primary" [(ngModel)]="checked">Auto-suggest <i>Convolutional Neural
+                            Network</i> (CNN)
+                        Parameters</mat-checkbox>
+                    <mat-checkbox color="primary">Append Section Header</mat-checkbox>
+                </div>
+                <div class="input-container">
+
+                    <mat-form-field class="quarter-width" *ngFor="let item of data">
+                        <mat-label>{{item.label}}</mat-label>
+                        <input matInput placeholder="Model Name" [value]="item.value">
+                    </mat-form-field>
+                </div>
+            </mat-card>
+        </div>
+    </div>
+</div>

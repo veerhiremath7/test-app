@@ -1,0 +1,105 @@
+<div class="page-one-container">
+    <div class="page-title">
+        <div class="title-text">
+            <div class="breadcrumbs">
+                <mat-icon style="margin: 0 10px;cursor: pointer; ">arrow_back</mat-icon>
+                <span class="bread1">Vendor Contracts ></span>
+                <span class="bread2">Fixed Price Contracts - English</span>
+            </div>
+        </div>
+        <div class="status">
+            <span>Assigned</span>
+        </div>
+        <div class="btns">
+            <button mat-raised-button class="download-btn">Cancel</button>
+            <button mat-raised-button color="primary" class="create-btn" style="margin-right: 20px;">Save</button>
+        </div>
+    </div>
+
+    <div class="page-two-section-two">
+        <div class="row1">
+            <div class="item">
+                <div class="number">18</div>
+                <div class="type">Intents</div>
+            </div>
+            <div class="item">
+                <div class="number">256</div>
+                <div class="type">Entities</div>
+            </div>
+            <div class="item">
+                <div class="number">12</div>
+                <div class="type">Documents</div>
+            </div>
+            <div class="item">
+                <div class="number">232</div>
+                <div class="type">Sentenses Identified</div>
+            </div>
+        </div>
+        <div class="row2">
+            <p>Document Status</p>
+            <div class="status-progress">
+                <div class="stat-color red"></div>
+                <div class="stat-color orange"></div>
+                <div class="stat-color lightgreen"></div>
+                <div class="stat-color green"></div>
+            </div>
+            <div class="status-desc">
+                <div class="status-container">
+                    <span class="box red"></span>
+                    <span class="label">Unassigned</span>
+                </div>
+                <div class="status-container">
+                    <span class="box orange"></span>
+                    <span class="label">Unassigned</span>
+                </div>
+                <div class="status-container">
+                    <span class="box lightgreen"></span>
+                    <span class="label">Unassigned</span>
+                </div>
+                <div class="status-container">
+                    <span class="box green"></span>
+                    <span class="label">Unassigned</span>
+                </div>
+            </div>
+
+        </div>
+        <div class="row3">
+            <table class="details-table">
+                <tr>
+                    <th>Assignee</th>
+                    <th>Docs</th>
+                    <th>Sentenses</th>
+                </tr>
+                <tr>
+                    <td>John.Doe</td>
+                    <td>6</td>
+                    <td>138</td>
+                </tr>
+                <tr>
+                    <td>Mitchelle.R</td>
+                    <td>4</td>
+                    <td>74</td>
+                </tr>
+                <tr>
+                    <td>Greg.Stevert</td>
+                    <td>2</td>
+                    <td>20</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <div class="page-two-section-3">
+        <mat-tab-group animationDuration="0ms" mat-stretch-tabs="false">
+            <mat-tab label="INTENTS">
+                <app-form></app-form>
+            </mat-tab>
+            <mat-tab label="DOCUMENTS">
+            </mat-tab>
+            <mat-tab label="STATASTICS">
+                <app-form></app-form>
+            </mat-tab>
+        </mat-tab-group>
+    </div>
+
+</div>

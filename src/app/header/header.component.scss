@@ -1,0 +1,86 @@
+.header {
+  display: flex;
+  flex-direction: row;
+  align-items: start space-between;
+  background: #162835;
+  height: 48px;
+}
+
+.right-section {
+  margin-left: auto;
+}
+
+.search-icon,
+.notifications,
+.user {
+  color: #fff;
+  margin: 12px;
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+::ng-deep.mat-mdc-text-field-wrapper.mdc-text-field--outlined
+  .mat-mdc-form-field-infix {
+  padding-top: 3px;
+  padding-bottom: 0;
+}
+
+::ng-deep
+  .mdc-text-field--outlined:not(.mdc-text-field--disabled)
+  .mdc-notched-outline__leading,
+.mdc-text-field--outlined:not(.mdc-text-field--disabled)
+  .mdc-notched-outline__notch,
+.mdc-text-field--outlined:not(.mdc-text-field--disabled)
+  .mdc-notched-outline__trailing {
+  border-color: #fff;
+}
+
+::ng-deep
+  .project-select
+  .mat-mdc-text-field-wrapper.mdc-text-field.mdc-text-field--outlined {
+  top: -20px;
+  height: 30px;
+}
+
+::ng-deep
+  .project-select
+  .mat-mdc-text-field-wrapper
+  .mat-mdc-form-field-flex
+  .mat-mdc-floating-label {
+  top: 15px;
+  color: #fff !important;
+  font-family: "Roboto-Regular";
+}
+
+::ng-deep
+  .project-select
+  .mdc-floating-label.mat-mdc-floating-label.mdc-floating-label--float-above {
+  top: 28px;
+}
+::ng-deep.project-select .mdc-notched-outline__leading,
+::ng-deep.project-select .mdc-notched-outline__notch,
+::ng-deep.project-select .mdc-notched-outline__trailing,
+::ng-deep .project-select span.mat-mdc-select-min-line {
+  border-color: #fff !important;
+  color: #fff;
+}
+
+::ng-deep .project-select .mat-mdc-select-arrow {
+  color: #fff !important;
+}
+
+.middle {
+  margin-left: auto;
+  box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.5), 0 1px 5px 0 #8a8a8a;
+  border-radius: 25px;
+  background: #fff8a3;
+  height: 36px;
+  width: 240px;
+}
+.current-page {
+  color: #000000de;
+  font-family: Roboto-Medium;
+  font-size: 14px;
+  text-align: center;
+  margin: 10px 0;
+}
